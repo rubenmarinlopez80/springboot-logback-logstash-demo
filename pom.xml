@@ -6,7 +6,7 @@
     <groupId>com.evan.demo</groupId>
     <artifactId>springboot-logback-logstash-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>springboot-logback-logstash-demo</name>
     <description></description>
