@@ -16,7 +16,7 @@ public class DemoController {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @RequestMapping(value = "", method = RequestMethod.GET)
+    @RequestMapping(value = "pruebalogs", method = RequestMethod.GET)
     public String demo() {
 
         logger.error("====> This is an error log");
