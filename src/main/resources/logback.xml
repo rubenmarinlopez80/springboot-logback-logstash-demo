@@ -25,8 +25,8 @@
         <then>
             <appender name="logstash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
                 <param name="Encoding" value="UTF-8"/>
-                <remoteHost>${logstash-host}</remoteHost>
-                <port>${logstash-port}</port>
+                <remoteHost>mev-pdpodelk-01.aragon.local</remoteHost>
+                <port>5044</port>
                 <!-- encoder is required -->
                 <encoder class="net.logstash.logback.encoder.LogstashEncoder">
                     <customFields>{"applicationName":"${applicationName}","env":"${env}"}</customFields>
