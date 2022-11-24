@@ -1,0 +1,25 @@
+server:
+    port: 9300
+
+spring:
+    application:
+        name: logback-logstash-demo
+
+    jackson:
+        time-zone: GMT+8
+        date-format: yyyy-MM-dd HH:mm:ss
+    http:
+        encoding:
+            enabled: true
+            charset: UTF-8
+            force: true
+        multipart:
+            maxFileSize: 50MB
+            maxRequestSize: 50MB
+
+elk:
+    enable: true
+    logstash:
+        server: mev-pdpodelk-01.aragon.local
+        port: 5044
+
