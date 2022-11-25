@@ -18,5 +18,5 @@ elk:
     enable: true
     logstash:
         server: mev-pdpodelk-01.aragon.local
-        port: 5044
+        port: 5045
 
