@@ -29,7 +29,17 @@
                 <port>5045</port>
                 <!-- encoder is required -->
                 <encoder class="net.logstash.logback.encoder.LogstashEncoder">
-                    <customFields>{"applicationName":"${applicationName}","env":"${env}"}</customFields>
+                     <customFields>
+                      {
+                      "appname": "${name_app}",
+                      "environment": "${environment}",
+                      "jvm_system_variable": "${java.runtime.name} ${java.runtime.version}"
+                      }
+                    </customFields>
+                    <includeCallerData>false</includeCallerData>
+                    <includeContext>false</includeContext>
+                    <includeMdcKeyName>user</includeMdcKeyName>
+                    <shortenedLoggerNameLength>36</shortenedLoggerNameLength>
                 </encoder>
             </appender>
         </then>
