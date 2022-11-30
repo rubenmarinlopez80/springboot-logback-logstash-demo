@@ -25,21 +25,13 @@
         <then>
             <appender name="logstash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
                 <param name="Encoding" value="UTF-8"/>
-                <remoteHost>mev-pdpodelk-01.aragon.local</remoteHost>
-                <port>5045</port>
+                <destination>mev-pdpodelk-01.aragon.local:5045</destination>
                 <!-- encoder is required -->
                 <encoder class="net.logstash.logback.encoder.LogstashEncoder">
-                     <customFields>
-                      {
-                      "appname": "${name_app}",
-                      "environment": "${environment}",
-                      "jvm_system_variable": "${java.runtime.name} ${java.runtime.version}"
-                      }
-                    </customFields>
-                    <includeCallerData>false</includeCallerData>
-                    <includeContext>false</includeContext>
-                    <includeMdcKeyName>user</includeMdcKeyName>
-                    <shortenedLoggerNameLength>36</shortenedLoggerNameLength>
+                <includeCallerData>false</includeCallerData>
+                <includeContext>false</includeContext>
+                <includeMdcKeyName>user</includeMdcKeyName>
+                <shortenedLoggerNameLength>36</shortenedLoggerNameLength>
                 </encoder>
             </appender>
         </then>
