@@ -32,6 +32,11 @@
                 <includeContext>false</includeContext>
                 <includeMdcKeyName>user</includeMdcKeyName>
                 <shortenedLoggerNameLength>36</shortenedLoggerNameLength>
+                    <customFields>
+                    {
+                    "application_name": "${applicationName}"
+                    }
+                   </customFields>
                 </encoder>
             </appender>
         </then>
