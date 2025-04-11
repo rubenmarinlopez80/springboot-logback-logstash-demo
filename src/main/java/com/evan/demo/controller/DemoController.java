@@ -29,7 +29,7 @@ public class DemoController {
         } catch (Exception e) {
             logger.error("====> This is an error log with stack trace", e);
         }
-        return "Hello World";
+        return "Hello World 2";
     }
 
 }
